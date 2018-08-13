@@ -1,0 +1,252 @@
+/* Color scheme */
+.background-primary { background-color: #0D1527;} /* basic dark background */
+.background-secondary { background-color: #14213D;} 
+.background-tertiary { background-color: #E5E5E5;} /* basic light background */
+.background-quaternary { background-color: #FFFFFF;}
+.background-quinary { background-color: #FCA311;} /* accent color */
+
+/* Main style */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+body > * {
+    max-width: 1400px;
+    margin: auto;
+    border-left: 2px solid #E5E5E5;
+    border-right: 2px solid #E5E5E5;
+}
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+p {
+    color: #14213D;
+}
+
+.decorated-headline::before,
+.decorated-headline::after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: #FCA311;
+}
+
+.decorated-headline::before {
+    float: left;
+}
+
+.decorated-headline::after {
+    float: right;
+}
+
+/* Button style */
+.btn {
+    display: block;
+    margin: auto;
+    border: 1px solid transparent;
+}
+
+.btn-header {
+    color: #FCA311;
+    text-decoration: none;
+    padding: 80px 0 40px;
+    max-width: 520px;
+}
+
+.btn-nav {
+    color: #0D1527;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    padding: 10px;
+}
+
+.btn-nav:hover {
+    background-color: #FCA311;
+    color: #E5E5E5;
+    border-color: #FCA311;
+    border-radius: 5px;
+}
+
+.btn-main-light {
+    color: #0D1527;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-color: #E5E5E5;
+    transition: all 0.2s linear;
+    padding: 10px;
+    max-width: 150px;
+}
+
+.btn-main-light:hover {
+    background-color: #FCA311;
+    color: #E5E5E5;
+    border-color: #FCA311;
+    border-radius: 5px;
+}
+
+/* Header style */
+header {
+    background: url("images/header.jpg") no-repeat center top;
+    color: #0D1527;
+    padding: 110px 0;
+    max-height: 540px;
+}
+
+.hero-header {
+    max-width: 600px;
+    margin: auto auto auto 45%;
+}
+
+header h1, header h2 {
+    display: inline-block;
+    width: 520px;
+    padding: 0 0 20px;
+}
+
+.headline-marked {
+    background-color: #0D1527;
+    color: #FFFFFF;
+    border: 1px solid #0D1527;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+h2 span {
+    color: #FCA311;
+    text-transform: lowercase;
+}
+
+/* Navigation bar style */
+nav {
+    border-bottom: 2px solid #E5E5E5;
+    padding: 40px 0 40px;
+}
+
+.nav-logo {
+    float: left;
+    text-align: center;
+    width: 33.3333%;
+    margin: 0 2%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+    padding-left: 4%;
+}
+
+/* Section 1 style */
+.main-section h2 {
+    padding: 60px 0 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.main-articles {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+}
+
+.main-articles article {
+    width: 33.3333%;
+    float: left;
+    transition: all 0.5s ease-in-out;
+    padding-bottom: 30px;
+}
+
+.main-articles article:hover i {
+    color: #E5E5E5;
+    background-color: #FCA311;
+}
+
+.main-articles i {
+    font-size: 4em;
+    color: #ffffff;
+    background-color: #0D1527;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.main-articles h3 {
+    padding: 20px 0 10px;
+}
+
+/* Gallery section */
+
+.gallery-section {
+    clear: both;
+    border-top: 2px solid #E5E5E5;
+}
+
+.gallery-section h2 {
+    color: #ffffff;
+    padding: 60px 0 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.gallery-section p {
+    color: #E5E5E5;
+}
+
+.gallery-images-containter {
+    overflow: hidden; 
+}
+
+.gallery-item {
+    display: block;
+    position: relative;
+    width: 23.75%;
+    height: 23.75%;
+    float: left;
+    margin: 1% 0 0 1%; /* add comment */
+}
+
+.gallery-item img {
+    width: 331.55px; /* add comment */
+    height: 331.55px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.image-caption {
+    opacity: 0; /* add comment */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 331.55px;
+    height: 331.55px;
+    background-color: rgba(252,163,17,0.5); /* accent color with transparency */
+    border-radius: 15px;
+    transition: all 0.5s linear;
+}
+
+.image-caption:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+
+.image-caption i {
+    display: block;
+    font-size: 5em;
+    margin: 80px 0 40px;
+}
