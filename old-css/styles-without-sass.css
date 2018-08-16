@@ -1,0 +1,557 @@
+/* Color scheme */
+.background-primary { background-color: #0D1527;} /* basic dark background */
+.background-secondary { background-color: #14213D;} 
+.background-tertiary { background-color: #E5E5E5;} /* basic light background */
+.background-quaternary { background-color: #FFFFFF;}
+.background-quinary { background-color: #FCA311;} /* accent color */
+
+/* Main style */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 2em;
+    margin: 0;
+}
+
+body > * {
+    max-width: 1400px;
+    margin: auto;
+    border-left: 2px solid #E5E5E5;
+    border-right: 2px solid #E5E5E5;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+p {
+    color: #14213D;
+}
+section, footer {
+    border-top: 2px solid #E5E5E5;
+}
+
+.decorated-headline {
+    padding: 60px 0 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.decorated-headline::before,
+.decorated-headline::after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: #FCA311;
+}
+
+.decorated-headline::before {
+    float: left;
+}
+
+.decorated-headline::after {
+    float: right;
+}
+
+/* Button style */
+.btn {
+    display: block;
+    margin: auto;
+    border: 1px solid transparent;
+}
+
+.btn-header {
+    color: #FCA311;
+    text-decoration: none;
+    padding: 80px 0 40px;
+    max-width: 520px;
+}
+
+.btn-nav {
+    color: #0D1527;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    padding: 10px;
+}
+
+.btn-nav:hover {
+    background-color: #FCA311;
+    color: #E5E5E5;
+    border-color: #FCA311;
+    border-radius: 5px;
+}
+
+.btn-main-light {
+    color: #0D1527;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-color: #E5E5E5;
+    transition: all 0.2s linear;
+    padding: 10px;
+    max-width: 150px;
+}
+
+.btn-main-light:hover {
+    background-color: #FCA311;
+    color: #E5E5E5;
+    border-color: #FCA311;
+    border-radius: 5px;
+}
+
+/* Header style */
+header {
+    background: url("images/header.jpg") no-repeat center top;
+    color: #0D1527;
+    padding: 110px 0;
+    max-height: 540px;
+}
+
+.hero-header {
+    max-width: 600px;
+    margin: auto auto auto 45%;
+}
+
+header h1, header h2 {
+    display: inline-block;
+    width: 520px;
+    padding: 0 0 20px;
+}
+
+.headline-marked {
+    background-color: #0D1527;
+    color: #FFFFFF;
+    border: 1px solid #0D1527;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+h2 span {
+    color: #FCA311;
+    text-transform: lowercase;
+}
+
+/* Navigation bar style */
+nav #navigation-menu {
+    padding: 40px 0 40px;
+}
+
+.nav-logo {
+    float: left;
+    text-align: center;
+    width: 33.3333%;
+    margin: 0 2%;
+}
+
+#navigation-menu ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+#navigation-menu li {
+    float: left;
+    padding-left: 4%;
+}
+
+/* Section 1 style */
+.main-articles {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+}
+
+.main-articles article {
+    width: 33.3333%;
+    float: left;
+    transition: all 0.5s ease-in-out;
+    padding-bottom: 50px;
+}
+
+.main-articles article:hover i {
+    color: #E5E5E5;
+    background-color: #FCA311;
+}
+
+.main-articles i {
+    font-size: 4em;
+    color: #ffffff;
+    background-color: #0D1527;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.main-articles h3 {
+    padding: 20px 0 10px;
+}
+
+/* Slider section */
+.slider {
+    clear: both;
+    width: 100%;
+    height: 850px;
+    margin: auto;
+    color: #ffffff;
+}
+
+.slider p {
+    color: #E5E5E5;
+}
+
+.slider-container {
+    position: relative;
+    width: 60%;
+    height: 500px;
+    margin: 50px auto 0;
+}
+
+.slider-items { /* Position of the slider's images */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-items h3,
+.slider-items p,
+.slider-items ul {
+    text-align: justify;
+    margin-left: 40%;
+    padding-left: 20%;
+    color: #E5E5E5;
+}
+
+.slider-items h3 {
+    padding-top: 50px;
+}
+
+.slider-items ul {
+    list-style: inside;
+    color: #FCA311;
+}
+
+.slider-item-1 {
+    z-index: 1;
+    width: 100%;
+    height: 500px;
+    background: url(images/slider_1.png) no-repeat bottom left;
+    background-size: auto 90%;
+    background-color:#14213D; /* background-color set here because of the PNG file's transparency */
+}
+
+.slider-item-2 {
+    width: 100%;
+    height: 500px;
+    background: url(images/slider_2.png) no-repeat bottom left;
+    background-size: auto 90%;
+    background-color: #14213D; /* background-color set here because of the PNG file's transparency */
+}
+
+.slider-item-3 {
+    width: 100%;
+    height: 500px;
+    background: url(images/slider_3.png) no-repeat bottom left;
+    background-size: auto 90%;
+    background-color: #14213D; /* background-color set here because of the PNG file's transparency */
+}
+
+.slider-nav {
+    margin: auto;
+    width: 205px;
+    padding: 20px;
+}
+
+.slider-nav a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #E5E5E5;
+    border-radius: 15px;
+    float: left;
+    margin: 20px 20px 50px;  
+    transition: all 0.5s ease;
+}
+
+.slider-nav a:hover {
+    background-color: #FCA311;
+}
+
+#slider-item-2:target ~ .slider-item-2,
+#slider-item-3:target ~ .slider-item-3 { /* Other images will replace the first image when are displayed */
+    z-index: 2;
+}
+
+/* Gallery section */
+
+.gallery-section {
+    clear: both;
+}
+
+.gallery-images-containter {
+    overflow: hidden; 
+    padding: 50px 0;
+}
+
+.gallery-item {
+    display: block;
+    position: relative;
+    width: 20%;
+    height: 20%;
+    float: left;
+    margin-left: 4%;
+    margin-bottom: 4%;
+}
+
+.gallery-item img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.image-link {
+    opacity: 0; /* before hover this element is not visible */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px; /* the same size as img item */
+    height: 280px;
+    background-color: rgba(252,163,17,0.5); /* accent color with transparency */
+    border-radius: 15px;
+    transition: all 0.5s linear;
+}
+
+.image-link:hover {
+    opacity: 1; /* after hover this element is visible */
+    color: #ffffff;
+}
+
+.image-link i {
+    font-size: 5em;
+    margin: 60px 0 10px;
+}
+
+.image-link p {
+    font-size: 1.5em;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+/* Contact data style */
+.contact-data h2 {
+    color: #ffffff;
+}
+.contact-data > p {
+    color: #E5E5E5;
+}
+
+.contact-container {
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.contact-memo {
+    width: 25%; /* optimal width of each item */
+    height: 400px;
+    float: left;
+    margin: calc((100% - 75%)/6); /* (100% of width - 3 x width of each element)/ [2 margins * 3 elements] */
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-memo:hover {
+    background-color: #FCA311;
+}
+
+#employee-1 { /* Different values due to the different sizes of the images */
+    background: #ffffff url(images/avatar-1.png) no-repeat center center;
+    background-size: contain;
+}
+
+#employee-2 { /* Different values due to the different sizes of the images */
+    background: #ffffff url(images/avatar-2.png) no-repeat center bottom;
+    background-size: auto 120%;
+}
+
+#employee-3 { /* Different values due to the different sizes of the images */
+    background: #ffffff url(images/avatar-3.png) no-repeat center center;
+    background-size: cover;
+}
+
+.employee-photo {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+.contact-memo h4,
+.contact-memo p {
+    margin: 0;
+}
+
+.contact-memo h4 {
+    padding-top: 10px;
+    color: #0D1527;
+}
+
+.contact-memo p {
+    padding-bottom: 15px;
+}
+
+.contact-memo a {
+    font-size: 0.9em;
+    color: #14213D;
+}
+
+.contact-memo i {
+    font-size: 1.5em;
+    padding-right: 10px;
+    margin: 0;
+    color: #14213D;
+}
+
+/* Testimonial section - testimonial as slider */
+.testimonial {
+    clear: both;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+}
+
+.testimonial-container {
+    position: relative;
+    width: 70%;
+    height: 200px;
+    margin: 50px auto 0;
+}
+
+.testimonial-items { /* Position of the testimonial's quotes */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.testimonial-items h3 {
+    padding-top: 50px;
+}
+
+[class^="testimonial-item"] { /* values for each 3 quotes */
+    width: 100%;
+    height: 200px;
+    background-color: #FCA311; /* background allows to see the item */
+    border-radius: 5px;
+}
+
+.testimonial-item-1 { /* allow to display the first quote */
+    z-index: 1;
+}
+
+.testimonial-items a { /* the container/parent of arrows */
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0px; /* in this case the parent of link/pointers is not visible but pointers could be positioned */
+    float: left;
+    font-size: 5em;
+    color: #14213D;
+}
+
+.testimonial-items i { /* position of arrows */
+    position: absolute; 
+    top: 60px;
+}
+
+.testimonial-items .fa-caret-left {
+    left: 30px;
+}
+.testimonial-items .fa-caret-right {
+    right: 30px;
+}
+
+.testimonial-items a:hover {
+    color: #FFFFFF;
+}
+
+#testimonial-item-2:target ~ .testimonial-item-2,
+#testimonial-item-3:target ~ .testimonial-item-3 { /* Other images will replace the first image when are displayed */
+    z-index: 2;
+}
+
+#quotation-mark::before,
+#quotation-mark::after {
+    position: absolute;
+    display: block;
+    font-size: 15em;
+    color: #0D1527;
+    z-index: 10;
+}
+
+#quotation-mark::before { 
+    content: open-quote;
+    top: 50px;
+    left: 100px;
+}
+
+#quotation-mark::after { 
+    content: close-quote;
+    bottom: -70px;
+    right: 100px;
+}
+
+/* Footer style */
+
+footer {
+    clear: both;
+    font-size: 0.8em;
+    border-bottom: 2px solid #E5E5E5;
+    color: #ffffff;
+}
+
+footer p {
+    color: #E5E5E5;
+    margin: 0;
+}
+
+.footer-col {
+    width: 33.3333%;
+    min-height: 250px;
+    float: left;
+}
+
+footer ul {
+    display: block;
+    list-style-position: inside;
+    text-align: left;
+    padding-left: 30%;
+}
+
+footer a {
+    color: #FCA311;
+}
+
+footer a:visited {
+    color: #ffffff;
+}
+
+.footer-col > a {
+    display: block;
+}
+
+.footer-col i {
+    margin-right: 5%;
+}
