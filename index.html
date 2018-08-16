@@ -19,7 +19,7 @@
                 <a class="btn btn-header decorated-headline" href="#">Click here to start</a>
             </div>
         </header>
-        <nav class="background-quaternary">
+        <nav id="navigation-menu" class="background-quaternary">
             <div class="nav-logo">Logo</div>
             <ul>
                 <li><a class="btn btn-nav" href="home">Site 1</a></li>
@@ -32,7 +32,7 @@
             </ul>
         </nav>
         <main>
-            <section class="main-section">
+            <section id="main" class="main-section">
                 <h2 class="decorated-headline">Excepteur sint occaecat</h2>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
                 <div class="main-articles">
@@ -56,60 +56,190 @@
                     </article>
                 </div>
             </section>
-            <section class="gallery-section background-secondary">
+            <section id="slider_offer" class="slider background-secondary">
+                <h2 class="decorated-headline">At vero eos et accusamus</h2>
+                <p>Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                <div class="slider-container">
+                    <div id="slider-item-1"></div>
+                    <div id="slider-item-2"></div>
+                    <div id="slider-item-3"></div>
+                    <div class="slider-items slider-item-1">
+                        <h3>Et quas molestias</h3>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+                        <ul>
+                            <li>Numquam eius modi  et  voluptatem</li>
+                            <li>Tempora incidunt ut labore</li>
+                            <li>Dolore magnam aliquam quaerat</li>
+                        </ul>
+                    </div>
+                    <div class="slider-items slider-item-2">
+                        <h3>Excepturi sint occaecati</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+                        <ul>
+                            <li>Aut odit aut fugit</li>
+                            <li>Sed quia consequuntur magni</li>
+                            <li>Dolores eos qui ratione</li>
+                        </ul>
+                    </div>
+                    <div class="slider-items slider-item-3">
+                        <h3>Cupiditate non provident</h3>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem.</p>
+                        <ul>
+                            <li>Ullam corporis suscipit</li>
+                            <li>Nisi ut aliquid ex ea commodi consequatur</li>
+                            <li>Quis autem vel eum</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                        <a href="#slider-item-1"></a>
+                        <a href="#slider-item-2"></a>
+                        <a href="#slider-item-3"></a>
+                </div>
+            </section>
+            <section id="gallery_works" class="gallery-section">
                 <h2 class="decorated-headline">Temporibus autem quibusdam</h2>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
-                <div class="gallery-images-containter background-secondary">
+                <div class="gallery-images-containter">
                     <div class="gallery-item">
                         <img src="images/gallery_1.jpg" alt="Our work">
-                        <a href="#" class="image-caption">
-                            <i class="fas fa-external-link-alt"></i>Check out our work in the new window
+                        <a href="#" class="image-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <p>Check out our work in the new window</p>
                         </a>
                     </div>
                     <div class="gallery-item">
                             <img src="images/gallery_2.jpg" alt="Our work">
-                            <a href="#" class="image-caption">
-                                <i class="fas fa-external-link-alt"></i>Check out our work in the new window
+                            <a href="#" class="image-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <p>Check out our work in the new window</p>
                             </a>
                         </div>
                     <div class="gallery-item">
                         <img src="images/gallery_3.jpg" alt="Our work">
-                        <a href="#" class="image-caption">
-                            <i class="fas fa-external-link-alt"></i>Check out our work in the new window
+                        <a href="#" class="image-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <p>Check out our work in the new window</p>
                         </a>
                     </div>
                     <div class="gallery-item">
                             <img src="images/gallery_4.jpg" alt="Our work">
-                            <a href="#" class="image-caption">
-                                <i class="fas fa-external-link-alt"></i>Check out our work in the new window
+                            <a href="#" class="image-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <p>Check out our work in the new window</p>
                             </a>
                     </div>
                     <div class="gallery-item">
                             <img src="images/gallery_5.jpg" alt="Our work">
-                            <a href="#" class="image-caption">
-                                <i class="fas fa-external-link-alt"></i>Check out our work in the new window
+                            <a href="#" class="image-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <p>Check out our work in the new window</p>
                             </a>
                     </div>
                     <div class="gallery-item">
                             <img src="images/gallery_6.jpg" alt="Our work">
-                            <a href="#" class="image-caption">
-                                <i class="fas fa-external-link-alt"></i>Check out our work in the new window
+                            <a href="#" class="image-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <p>Check out our work in the new window</p>
                             </a>
                     </div>
                     <div class="gallery-item">
                             <img src="images/gallery_7.jpg" alt="Our work">
-                            <a href="#" class="image-caption">
-                                <i class="fas fa-external-link-alt"></i>Check out our work in the new window
+                            <a href="#" class="image-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <p>Check out our work in the new window</p>
                             </a>
                     </div>
                     <div class="gallery-item">
                             <img src="images/gallery_8.jpg" alt="Our work">
-                            <a href="#" class="image-caption">
-                                <i class="fas fa-external-link-alt"></i>Check out our work in the new window
+                            <a href="#" class="image-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <p>Check out our work in the new window</p>
                             </a>
                     </div>
                 </div>
             </section>
+            <section id="contact_data" class="contact-data background-secondary">
+                <h2 class="decorated-headline">Quis autem vel eum iure</h2>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                <div class="contact-container background-secondary">
+                    <div class="contact-memo background-tertiary">
+                        <div id="employee-1" class="employee-photo"></div>
+                        <h4>Suscipit Laboriosam</h4>
+                        <p>Exercitationem</p>
+                        <a href="mailto:somebody@example.com"><i class="fas fa-envelope"></i>somebody@example.com</a>
+                        <a href="tel:+123456789"><i class="fas fa-phone"></i>+12 345 6789</a>
+                    </div>
+                    <div class="contact-memo background-tertiary">
+                        <div id="employee-2" class="employee-photo"></div>
+                        <h4>Minima Veniam</h4>
+                        <p>Nostrum Exercitationem</p>
+                        <a href="mailto:somebody@example.com"><i class="fas fa-envelope"></i>somebody@example.com</a>
+                        <a href="tel:+123456789"><i class="fas fa-phone"></i>+12 345 6789</a>
+                    </div>
+                    <div class="contact-memo background-tertiary">
+                        <div id="employee-3" class="employee-photo"></div>
+                        <h4>Vero Eos</h4>
+                        <p>Commodi Consequatur</p>
+                        <a href="mailto:somebody@example.com"><i class="fas fa-envelope"></i>somebody@example.com</a>
+                        <a href="tel:+123456789"><i class="fas fa-phone"></i>+12 345 6789</a>
+                    </div>
+                </div>    
+            </section>
+            <section id="quotes" class="testimonial">
+                <h2 class="decorated-headline">At vero eos et accusamus</h2>
+                <p>Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                <div id="quotation-mark" class="testimonial-container">
+                    <div id="testimonial-item-1"></div>
+                    <div id="testimonial-item-2"></div>
+                    <div id="testimonial-item-3"></div>
+                    <div class="testimonial-items testimonial-item-1">
+                        <a href="#testimonial-item-3"><i class="fas fa-caret-left"></i></a>
+                        <a href="#testimonial-item-2"><i class="fas fa-caret-right"></i></a>
+                        <h3>Et quas molestias</h3>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                    </div>
+                    <div class="testimonial-items testimonial-item-2">
+                        <a href="#testimonial-item-1"><i class="fas fa-caret-left"></i></a>
+                        <a href="#testimonial-item-3"><i class="fas fa-caret-right"></i></a>
+                        <h3>Excepturi sint occaecati</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                    </div>
+                    <div class="testimonial-items testimonial-item-3">
+                        <a href="#testimonial-item-2"><i class="fas fa-caret-left"></i></a>
+                        <a href="#testimonial-item-1"><i class="fas fa-caret-right"></i></a>
+                        <h3>Cupiditate non provident</h3>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p> 
+                    </div>
+                </div>
+            </section>
         </main>
+        <footer class="background-primary">
+            <div class="footer-col">
+                <nav>
+                    <h4>Site map</h4>
+                    <ul>
+                        <li><a href="#main">Excepteur sint occaecat</a></li>
+                        <li><a href="#slider_offer">At vero eos et accusamus</a></li>
+                        <li><a href="#gallery_works">Temporibus autem quibusdam</a></li>
+                        <li><a href="#contact_data">Quis autem vel eum iure</a></li>
+                        <li><a href="#quotes">At vero eos et accusamus</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-col">
+                <h4>Itaque earum rerum</h4>
+                <p>hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus</p>
+                <a href="mailto:somebody@example.com"><i class="fas fa-envelope"></i>somebody@example.com</a>
+                <a href="tel:+123456789"><i class="fas fa-phone"></i>+12 345 6789</a>
+            </div>
+            <div class="footer-col">
+                <h4>Itaque earum rerum</h4>
+                <p>12345 Somewhere</p>
+                <p>Somewhere 12 3</p>
+                <p>Somewhere</p>
+            </div>
+            <div class="footer-row"><h4>Copyright &copy; 2018 turqu, All Right Reserved</h4></div>
+        </footer>
     </body>
 </html>
