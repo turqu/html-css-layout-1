@@ -21,7 +21,7 @@
     background-color: $color-gold;
 }
 
-@include small-device {
+@include small-device { /* equivalent for small and medium devices */
     #navigation-menu {
         padding: 40px 0;
         & ul {

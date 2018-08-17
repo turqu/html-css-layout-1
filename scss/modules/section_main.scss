@@ -1,20 +1,24 @@
-/* Section Main style */
+/* Section Main style - desgined for extra small, small and medium devices */
+.main-section {
+    & > p {
+        padding: 0 50px;
+    }
+}
+
 .main-articles {
     width: 80%;
     margin: auto;
     padding: 30px;
     & article {
-        width: 33.3333%;
-        float: left;
         transition: all 0.5s ease-in-out;
-        padding-bottom: 50px;
+        padding: 30px 50px 40px;
         &:hover i {
             color: $color-light-grey;
             background-color: $color-gold;
         }
     }
     & i {
-        font-size: 4em;
+        font-size: 5em;
         color: $color-white;
         background-color: $color-dark-blue;
         border-radius: 50%;
@@ -22,5 +26,18 @@
     }
     & h3 {
         padding: 20px 0 10px;
+    }
+}
+
+@include large-device {
+    .main-articles {
+        & article {
+            width: $one-third-width;
+            float: left;
+            padding: 20px 20px 50px;
+        }
+        & i {
+            font-size: 4em;
+        }
     }
 }

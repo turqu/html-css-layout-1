@@ -188,12 +188,10 @@ header {
   background-color: #FCA311; }
 
 @media only screen and (min-width: 600px) {
+  /* equivalent for small and medium devices */
   #navigation-menu {
     padding: 40px 0; }
     #navigation-menu ul {
-      list-style-type: none;
-      margin: auto;
-      overflow: hidden;
       padding: 20px 0;
       width: 580px; }
       #navigation-menu ul li {
@@ -216,27 +214,36 @@ header {
     #navigation-menu ul li {
       padding-left: 3%; } }
 
-/* Section Main style */
+/* Section Main style - desgined for extra small, small and medium devices */
+.main-section > p {
+  padding: 0 50px; }
+
 .main-articles {
   width: 80%;
   margin: auto;
   padding: 30px; }
   .main-articles article {
-    width: 33.3333%;
-    float: left;
     transition: all 0.5s ease-in-out;
-    padding-bottom: 50px; }
+    padding: 30px 50px 40px; }
     .main-articles article:hover i {
       color: #E5E5E5;
       background-color: #FCA311; }
   .main-articles i {
-    font-size: 4em;
+    font-size: 5em;
     color: #ffffff;
     background-color: #14213D;
     border-radius: 50%;
     padding: 20px; }
   .main-articles h3 {
     padding: 20px 0 10px; }
+
+@media only screen and (min-width: 992px) {
+  .main-articles article {
+    width: 33.3333%;
+    float: left;
+    padding: 20px 20px 50px; }
+  .main-articles i {
+    font-size: 4em; } }
 
 /* Slider section */
 .slider {
@@ -314,37 +321,36 @@ header {
   /* Other images will replace the first image when are displayed */
   z-index: 2; }
 
-/* Gallery section */
+/* Gallery section - designed for extra-small device */
 .gallery-section {
   clear: both; }
 
 .gallery-images-containter {
-  overflow: hidden;
   padding: 50px 0; }
 
 .gallery-item {
   display: block;
   position: relative;
-  width: 20%;
-  height: 20%;
-  float: left;
-  margin-left: 4%;
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
   margin-bottom: 4%; }
   .gallery-item img {
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 15px; }
 
 .image-link {
   opacity: 0;
-  /* before hover this element is not visible */
+  /* until hover this element is not visible */
   position: absolute;
   top: 0;
-  left: 0;
-  width: 280px;
+  left: calc((100% - 300px) / 2);
+  /* ((100% of width - the size of element) / 2 [2 margins: left and right]) */
+  width: 300px;
   /* the same size as img item */
-  height: 280px;
+  height: 300px;
   background-color: rgba(252, 163, 17, 0.5);
   /* accent color with transparency */
   border-radius: 15px;
@@ -361,28 +367,93 @@ header {
     color: #ffffff;
     padding: 0 20px; }
 
-/* Contact data style */
+@media only screen and (min-width: 600px) {
+  .gallery-images-containter {
+    overflow: hidden; }
+  .gallery-item {
+    width: 50%;
+    height: 50%;
+    float: left; }
+    .gallery-item img {
+      width: 270px;
+      height: 270px; }
+  .image-link {
+    left: calc((100% - 270px) / 2);
+    /* ((100% of width - the size of element) / 2 [2 margins: left and right]) */
+    width: 270px;
+    /* the same size as img item */
+    height: 270px; } }
+
+@media only screen and (min-width: 768px) {
+  .gallery-item {
+    float: left; }
+    .gallery-item img {
+      width: 330px;
+      height: 330px; }
+  .image-link {
+    left: calc((100% - 330px) / 2);
+    /* ((100% of width - the size of element) / 2 [2 margins: left and right]) */
+    width: 330px;
+    /* the same size as img item */
+    height: 330px; }
+    .image-link i {
+      margin-left: 80px; } }
+
+@media only screen and (min-width: 992px) {
+  .gallery-item {
+    width: 25%;
+    height: 25%; }
+    .gallery-item img {
+      width: 220px;
+      height: 220px; }
+  .image-link {
+    left: calc((100% - 220px) / 2);
+    /* ((100% of width - the size of element) / 2 [2 margins: left and right]) */
+    width: 220px;
+    /* the same size as img item */
+    height: 220px; }
+    .image-link i {
+      font-size: 4em;
+      margin-left: 40px; }
+    .image-link p {
+      font-size: 1.2em; } }
+
+@media only screen and (min-width: 1200px) {
+  .gallery-item img {
+    width: 280px;
+    height: 280px; }
+  .image-link {
+    left: calc((100% - 280px) / 2);
+    /* ((100% of width - the size of element) / 2 [2 margins: left and right]) */
+    width: 280px;
+    /* the same size as img item */
+    height: 280px; }
+    .image-link i {
+      font-size: 5em;
+      margin-left: 60px; }
+    .image-link p {
+      font-size: 1.5em; } }
+
+/* Contact data style - designed for extra small device*/
 .contact-data h2 {
   color: #ffffff; }
 
 .contact-data > p {
-  color: #E5E5E5; }
+  color: #E5E5E5;
+  padding: 0 50px; }
 
 .contact-container {
-  width: 75%;
+  width: 90%;
   margin: auto;
   overflow: hidden;
   padding-bottom: 50px; }
 
 .contact-memo {
-  width: 25%;
-  /* optimal width of each item */
-  height: 400px;
-  float: left;
-  margin: calc((100% - 75%)/6);
-  /* (100% of width - 3 x width of each element)/ [2 margins * 3 elements] */
+  width: 100%;
+  background-clip: content-box;
+  min-height: 250px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 20px;
   transition: all 0.5s ease-in-out; }
   .contact-memo:hover {
     background-color: #FCA311; }
@@ -393,13 +464,16 @@ header {
     padding-top: 10px;
     color: #0D1527; }
   .contact-memo p {
-    padding-bottom: 15px; }
+    height: 70px;
+    padding: 0 10px 15px; }
   .contact-memo a {
-    font-size: 0.9em;
+    display: block;
+    margin-left: 100px;
+    font-size: 0.8em;
     color: #14213D; }
   .contact-memo i {
+    display: block;
     font-size: 1.5em;
-    padding-right: 10px;
     margin: 0;
     color: #14213D; }
 
@@ -419,10 +493,50 @@ header {
   background-size: cover; }
 
 .employee-photo {
-  margin: auto;
-  height: 200px;
-  width: 200px;
+  float: left;
+  margin: 20px 20px 0;
+  height: 100px;
+  width: 100px;
   border-radius: 100%; }
+
+@media only screen and (min-width: 600px) {
+  .contact-container {
+    width: 95%; }
+  .contact-memo {
+    float: left;
+    width: 33.3333%;
+    height: 420px; }
+    .contact-memo a {
+      display: inline-block;
+      margin: 0; }
+  .employee-photo {
+    float: none;
+    margin: 20px auto 0;
+    height: 130px;
+    width: 130px; } }
+
+@media only screen and (min-width: 768px) {
+  .contact-memo p {
+    height: initial; }
+  .contact-memo i {
+    display: inline-block;
+    margin-right: 10px; }
+  .contact-memo a {
+    font-size: 0.9em; }
+  .employee-photo {
+    height: 200px;
+    width: 200px; } }
+
+@media only screen and (min-width: 992px) {
+  .contact-container {
+    width: 85%; } }
+
+@media only screen and (min-width: 1200px) {
+  .contact-container {
+    width: 70%; }
+  .contact-memo {
+    padding: 10px 20px;
+    border-radius: 40px; } }
 
 /* Testimonial section - testimonial as slider */
 .testimonial {
