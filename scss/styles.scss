@@ -1,1 +1,14 @@
-@import 'css/styles.css';
+/* Import basic style */
+@import 'scss/base/mixins.scss';
+@import 'scss/base/variables.scss';
+@import 'scss/base/main.scss';
+@import 'scss/base/buttons.scss';
+/* Import modules */
+@import 'scss/modules/header.scss';
+@import 'scss/modules/navigation_bar.scss';
+@import 'scss/modules/section_main.scss';
+@import 'scss/modules/section_slider.scss';
+@import 'scss/modules/section_gallery.scss';
+@import 'scss/modules/section_contact.scss';
+@import 'scss/modules/section_testimonial.scss';
+@import 'scss/modules/footer.scss';

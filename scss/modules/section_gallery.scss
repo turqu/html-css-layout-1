@@ -1,0 +1,54 @@
+/* Gallery section */
+
+.gallery-section {
+    clear: both;
+}
+
+.gallery-images-containter {
+    overflow: hidden; 
+    padding: 50px 0;
+}
+
+.gallery-item {
+    display: block;
+    position: relative;
+    width: 20%;
+    height: 20%;
+    float: left;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    & img {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+}
+
+.image-link {
+    opacity: 0; /* before hover this element is not visible */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px; /* the same size as img item */
+    height: 280px;
+    background-color: $color-gold-transparent; /* accent color with transparency */
+    border-radius: 15px;
+    transition: all 0.5s linear;
+    &:hover {
+        opacity: 1; /* after hover this element is visible */
+        color: $color-white;
+    }
+    & i {
+        font-size: 5em;
+        margin: 60px 0 10px;
+    }
+    & p {
+        font-size: 1.5em;
+        color: $color-white;
+        padding: 0 20px;
+    }
+}
+
+
+

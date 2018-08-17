@@ -1,0 +1,84 @@
+/* Testimonial section - testimonial as slider */
+.testimonial {
+    clear: both;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+}
+
+.testimonial-container {
+    position: relative;
+    width: 70%;
+    height: 200px;
+    margin: 50px auto 0;
+}
+
+.testimonial-items { /* Position of the testimonial's quotes */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    & h3 {
+        padding-top: 50px;
+    }
+    & a { /* the container/parent of arrows */
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 0px; /* in this case the parent of link/pointers is not visible but pointers could be positioned */
+        float: left;
+        font-size: 5em;
+        color: $color-dark-blue;
+        &:hover {
+            color: $color-white;
+        }
+    }
+    & i { /* position of arrows */
+        position: absolute; 
+        top: 60px;
+    }
+    & .fa-caret-left {
+        left: 30px;
+    }
+    & .fa-caret-right {
+        right: 30px;
+    }    
+}
+
+[class^="testimonial-item"] { /* values for each 3 quotes */
+    width: 100%;
+    height: 200px;
+    background-color: $color-gold; /* background allows to see the item */
+    border-radius: 5px;
+}
+
+.testimonial-item-1 { /* allow to display the first quote */
+    z-index: 1;
+}
+
+#testimonial-item-2:target ~ .testimonial-item-2,
+#testimonial-item-3:target ~ .testimonial-item-3 { /* Other images will replace the first image when are displayed */
+    z-index: 2;
+}
+
+#quotation-mark::before,
+#quotation-mark::after {
+    position: absolute;
+    display: block;
+    font-size: 15em;
+    color: $color-black-blue;
+    z-index: 10;
+}
+
+#quotation-mark::before { 
+    content: open-quote;
+    top: 50px;
+    left: 100px;
+}
+
+#quotation-mark::after { 
+    content: close-quote;
+    bottom: -70px;
+    right: 100px;
+}

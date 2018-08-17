@@ -1,0 +1,26 @@
+/* Section Main style */
+.main-articles {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    & article {
+        width: 33.3333%;
+        float: left;
+        transition: all 0.5s ease-in-out;
+        padding-bottom: 50px;
+        &:hover i {
+            color: $color-light-grey;
+            background-color: $color-gold;
+        }
+    }
+    & i {
+        font-size: 4em;
+        color: $color-white;
+        background-color: $color-dark-blue;
+        border-radius: 50%;
+        padding: 20px;
+    }
+    & h3 {
+        padding: 20px 0 10px;
+    }
+}

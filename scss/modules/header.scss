@@ -1,0 +1,74 @@
+/* Header style - desgined for extra small devices*/
+header {
+    background: url("../images/header.jpg") no-repeat;
+    background-size: cover;
+    color: $color-black-blue;
+    & h1, & h2 {
+        display: block;
+        margin: 0 20px;
+        padding: 0 0 20px;
+    }
+    & h2 {
+        & span {
+            color: $color-gold;
+            text-transform: lowercase;
+        }
+    }
+    & a {
+        font-size: 1.3em;
+    }
+}
+.hero-header {
+    background-color: $color-white-transparent;
+    margin: auto;
+    padding: 110px 20px 35px;
+}
+
+.headline-marked {
+    background-color: $color-black-blue;
+    color: $color-white;
+    border: 1px solid $color-black-blue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+/* Other device size styles */
+@include small-device {
+    header {
+        padding: 0;
+        & h1, & h2 {
+            display: inline-block;
+            width: 520px;
+        }
+    }
+    .hero-header {
+        height: 450px;
+        padding: 110px 0;
+    } 
+}  
+
+@include medium-device {
+    header {
+        background: url("../images/header.jpg") no-repeat 45% 0%;
+        padding: 60px 0;
+    }
+    .hero-header {
+        max-width: 600px;
+    }
+}
+
+@include large-device {
+    header {
+        background: url("../images/header.jpg") no-repeat center top;
+    }
+    .hero-header {
+        background-color: transparent;
+        margin: auto 5% auto 40%;
+    }
+}
+
+@include very-large-device {
+    .hero-header {
+        margin: auto auto auto 45%;
+    }
+}

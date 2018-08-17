@@ -1,0 +1,73 @@
+/* Contact data style */
+.contact-data {
+    & h2 {
+        color: $color-white;
+    }
+    & > p {
+        color: $color-light-grey;
+    }
+}
+
+.contact-container {
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.contact-memo {
+    width: 25%; /* optimal width of each item */
+    height: 400px;
+    float: left;
+    margin: calc((100% - 75%)/6); /* (100% of width - 3 x width of each element)/ [2 margins * 3 elements] */
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        background-color: $color-gold;
+    }
+    & h4,
+    & p {
+        margin: 0;
+    }
+    & h4 {
+        padding-top: 10px;
+        color: $color-black-blue;
+    }
+    & p {
+        padding-bottom: 15px;
+    }
+    & a {
+        font-size: 0.9em;
+        color: $color-dark-blue;
+    }
+    & i {
+        font-size: 1.5em;
+        padding-right: 10px;
+        margin: 0;
+        color: $color-dark-blue;
+    }
+}
+
+#employee-1 { /* Different values due to the different sizes and transparency of the images */
+    background: $color-white url("../images/avatar-1.png") no-repeat center center;
+    background-size: contain;
+}
+
+#employee-2 { /* Different values due to the different sizes of the images */
+    background: url("../images/avatar-2.png") no-repeat center bottom;
+    background-size: auto 120%;
+}
+
+#employee-3 { /* Different values due to the different sizes of the images */
+    background: url("../images/avatar-3.png") no-repeat center center;
+    background-size: cover;
+}
+
+.employee-photo {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
