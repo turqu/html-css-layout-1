@@ -16,7 +16,7 @@
     & img {
         width: 18.750em;
         height: 18.750em;
-        object-fit: cover;
+        @include object-fit(cover);
         border-radius: 15px;
     }
 }
@@ -30,7 +30,7 @@
     height: 18.750em; /* 300px */
     background-color: $color-gold-transparent; /* accent color with transparency */
     border-radius: 15px;
-    transition: all 0.5s linear;
+    @include transition(all 0.5s linear);
     &:hover {
         opacity: 1; /* after hover this element is visible */
         color: $color-white;

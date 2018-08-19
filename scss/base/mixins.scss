@@ -34,3 +34,19 @@ $very-large-device: 75em !default; /* 1200px */
         @content;
     }
 }
+
+@mixin box-sizing($values) {
+    -webkit-box-sizing: $values;
+    box-sizing: $values;
+}
+
+@mixin transition($values) {
+    -webkit-transition: $values;
+    -o-transition: $values;
+    transition: $values;
+}
+
+@mixin object-fit($values) {
+    -o-object-fit: $values;
+       object-fit: $values;
+}   

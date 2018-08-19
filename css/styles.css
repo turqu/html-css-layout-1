@@ -64,6 +64,7 @@
 
 /* Main style */
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
@@ -126,6 +127,8 @@ section, footer {
   color: #0D1527;
   text-transform: uppercase;
   text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   padding: 10px; }
   .btn-nav:hover {
@@ -139,6 +142,8 @@ section, footer {
   text-transform: uppercase;
   text-decoration: none;
   border-color: #E5E5E5;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   padding: 10px;
   max-width: 9.375em;
@@ -259,6 +264,8 @@ header {
   margin: auto;
   padding: 30px; }
   .main-articles article {
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     padding: 30px 10px 40px; }
     .main-articles article:hover i {
@@ -342,6 +349,8 @@ header {
     border-radius: 15px;
     float: left;
     margin: 20px 20px 50px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
     .slider-nav a:hover {
       background-color: #FCA311; }
@@ -414,6 +423,7 @@ header {
   .gallery-item img {
     width: 18.750em;
     height: 18.750em;
+    -o-object-fit: cover;
     object-fit: cover;
     border-radius: 15px; }
 
@@ -431,6 +441,8 @@ header {
   background-color: rgba(252, 163, 17, 0.5);
   /* accent color with transparency */
   border-radius: 15px;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
   transition: all 0.5s linear; }
   .image-link:hover {
     opacity: 1;
@@ -518,6 +530,8 @@ header {
   min-height: 15.625em;
   padding: 10px;
   border-radius: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
   .contact-memo:hover {
     background-color: #FCA311; }
