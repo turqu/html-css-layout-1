@@ -1,14 +1,4 @@
 /* Contact data style - designed for extra small device*/
-.contact-data {
-    & h2 {
-        color: $color-white;
-    }
-    & > p {
-        color: $color-light-grey;
-        padding: 0 50px;
-    }
-}
-
 .contact-container {
     width: 90%;
     margin: auto;
@@ -19,7 +9,7 @@
 .contact-memo {
     width: 100%;
     background-clip: content-box;
-    min-height: 250px;
+    min-height: 15.625em;
     padding: 10px;
     border-radius: 20px;
     transition: all 0.5s ease-in-out;
@@ -32,10 +22,9 @@
     }
     & h4 {
         padding-top: 10px;
-        color: $color-black-blue;
     }
     & p {
-        height: 70px;
+        height: 4.375em;
         padding: 0 10px 15px;
     }
     & a {
@@ -70,8 +59,8 @@
 .employee-photo {
     float: left;
     margin: 20px 20px 0;
-    height: 100px;
-    width: 100px;
+    height: 6.250em;
+    width: 6.250em; 
     border-radius: 100%;
 }    
 
@@ -83,7 +72,7 @@
     .contact-memo {
         float: left;
         width: $one-third-width;
-        height: 420px;
+        min-height: 26.250em; 
         & a {
             display: inline-block;
             margin: 0;
@@ -93,8 +82,8 @@
     .employee-photo {
         float: none;
         margin: 20px auto 0;
-        height: 130px;
-        width: 130px;
+        height: 8.125em; 
+        width: 8.125em;
     }
 }
 
@@ -113,8 +102,8 @@
     }
 
     .employee-photo {
-        height: 200px;
-        width: 200px;
+        height: 12.5em;
+        width: 12.5em;
     }
 }
 

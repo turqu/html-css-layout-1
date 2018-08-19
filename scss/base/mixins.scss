@@ -1,9 +1,9 @@
 /* Breakpoints for the responsive layout - according to https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
-$extra-small-device: 600px !default;
-$small-device: 600px !default;
-$medium-device: 768px !default;
-$large-device: 992px !default;
-$very-large-device: 1200px !default;
+$extra-small-device: 37.5em !default; /* 600px */
+$small-device: 37.5em !default; /* 600px */
+$medium-device: 48em !default; /* 768px */
+$large-device: 62em !default; /* 992px */
+$very-large-device: 75em !default; /* 1200px */
 
 @mixin extra-small-device {
     @media only screen and (max-width: $extra-small-device) {
@@ -34,5 +34,3 @@ $very-large-device: 1200px !default;
         @content;
     }
 }
-
-/* Style mixins */

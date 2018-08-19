@@ -1,17 +1,11 @@
 /* Section Main style - desgined for extra small, small and medium devices */
-.main-section {
-    & > p {
-        padding: 0 50px;
-    }
-}
-
 .main-articles {
     width: 80%;
     margin: auto;
     padding: 30px;
     & article {
         transition: all 0.5s ease-in-out;
-        padding: 30px 50px 40px;
+        padding: 30px 10px 40px;
         &:hover i {
             color: $color-light-grey;
             background-color: $color-gold;

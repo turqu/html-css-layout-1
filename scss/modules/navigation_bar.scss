@@ -6,7 +6,7 @@
         margin: auto;
         overflow: hidden;
         padding: 15px 0;
-        width: 180px;
+        min-width: 11.25em;
         & li {
             padding: 0;
         }
@@ -14,7 +14,6 @@
 }
 
 .nav-logo {
-    text-align: center;
     margin: 2% 10%;
     padding: 0 50px;
     background-clip: content-box;
@@ -23,10 +22,9 @@
 
 @include small-device { /* equivalent for small and medium devices */
     #navigation-menu {
-        padding: 40px 0;
         & ul {
             padding: 20px 0;
-            width: 580px;
+            width: 36.250em;
             & li {
                 float: left;
                 padding-left: 2%;

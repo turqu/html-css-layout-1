@@ -1,26 +1,55 @@
-/* Color scheme */
-.background-primary { background-color: $color-black-blue;} /* basic dark background */
+/* Backgrounds schemes */
+.background-primary { background-color: $color-black-blue;}
 .background-secondary { background-color: $color-dark-blue;} 
-.background-tertiary { background-color: $color-light-grey;} /* basic light background */
+.background-tertiary { background-color: $color-light-grey;}
 .background-quaternary { background-color: $color-white;}
-.background-quinary { background-color: $color-gold;} /* accent color */
+.background-quinary { background-color: $color-gold;}
+
+/* Dark color schemes */
+.background-primary,
+.background-secondary,
+.background-quinary {
+    & h1, h2, h3, h4 { 
+        color: $color-white;
+    }
+    & p {
+        color: $color-light-grey;
+    }
+    & > p {
+        padding: 0 30px;
+    }
+}
+
+/* Light color schemes */
+.background-tertiary,
+.background-quaternary {
+    & h1, h2, h3, h4 {
+        color: $color-black-blue;
+    }
+    & p {
+        color: $color-dark-blue;
+    }
+    & > p {
+        padding: 0 30px;
+    }
+}
 
 /* Main style */
-* {
+* { 
     box-sizing: border-box;
 }
 
 body {
+    max-width: 1400px;
     background-color: $color-white;
     font-family: sans-serif;
     text-align: center;
     line-height: 2em;
-    margin: 0;
+    margin: auto;
     & > * {
-        max-width: 1400px;
         margin: auto;
-        border-left: 2px solid $color-light-grey;
-        border-right: 2px solid $color-light-grey;
+        border-left: $main-border-style;
+        border-right: $main-border-style;
     }
 }
 
@@ -29,34 +58,34 @@ h1, h2, h3 {
     margin: 0;
 }
 
-p {
-    color: $color-dark-blue;
-}
-section, footer {
-    border-top: 2px solid $color-light-grey;
-}
+section, footer { border-top: $main-border-style; }
 
 .decorated-headline {
     padding: 60px 0 30px;
-    max-width: 700px;
+    max-width: 70%;
     margin: 0 auto;
+    position: relative;
     &::before,
     &::after {
+        position: absolute;
         display: block;
         content: '';
         width: 20%;
         height: 5px;
         background-color: $color-gold;
-        @include small-device { /* longer width for small and above devices */ 
-            width: 100px;
+    }
+    &::before {
+        left: -70px;
+        top: 65px;
+        @include small-device {
+            left: -100px;
         }
     }
-}
-
-.decorated-headline::before {
-    float: left;
-}
-
-.decorated-headline::after {
-    float: right;
+    &::after {
+        right: -70px;
+        top: 65px;
+        @include small-device {
+            right: -100px;
+        }
+    }
 }

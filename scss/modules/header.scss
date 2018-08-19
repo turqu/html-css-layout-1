@@ -1,10 +1,10 @@
 /* Header style - desgined for extra small devices*/
+/* Separate color scheme */
 header {
     background: url("../images/header.jpg") no-repeat;
     background-size: cover;
     color: $color-black-blue;
     & h1, & h2 {
-        display: block;
         margin: 0 20px;
         padding: 0 0 20px;
     }
@@ -22,12 +22,17 @@ header {
     background-color: $color-white-transparent;
     margin: auto;
     padding: 110px 20px 35px;
+    & .decorated-headline::before {
+        left: 0;
+    }
+    & .decorated-headline::after {
+        right: 0;
+    }
 }
 
 .headline-marked {
     background-color: $color-black-blue;
     color: $color-white;
-    border: 1px solid $color-black-blue;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
@@ -38,11 +43,11 @@ header {
         padding: 0;
         & h1, & h2 {
             display: inline-block;
-            width: 520px;
+            max-width: 32.5em;
         }
     }
     .hero-header {
-        height: 450px;
+        max-height: 28.125em;
         padding: 110px 0;
     } 
 }  
@@ -53,7 +58,7 @@ header {
         padding: 60px 0;
     }
     .hero-header {
-        max-width: 600px;
+        max-width: 37.5em;
     }
 }
 

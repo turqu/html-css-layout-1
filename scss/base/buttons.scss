@@ -9,7 +9,7 @@
     color: $color-gold;
     text-decoration: none;
     padding: 80px 0 40px;
-    max-width: 520px;
+    width: 32.5em;
 }
 
 .btn-nav {
@@ -18,13 +18,12 @@
     text-decoration: none;
     transition: all 0.2s linear;
     padding: 10px;
-}
-
-.btn-nav:hover {
-    background-color: $color-gold;
-    color: $color-light-grey;
-    border-color: $color-gold;
-    border-radius: 5px;
+    &:hover {
+        background-color: $color-gold;
+        color: $color-light-grey;
+        border-color: $color-gold;
+        border-radius: 5px;
+    }
 }
 
 .btn-main-light {
@@ -34,12 +33,11 @@
     border-color: $color-light-grey;
     transition: all 0.2s linear;
     padding: 10px;
-    max-width: 150px;
-}
-
-.btn-main-light:hover {
-    background-color: $color-gold;
-    color: $color-light-grey;
-    border-color: $color-gold;
-    border-radius: 5px;
+    max-width: 9.375em; /* 150px */
+    &:hover {
+        background-color: $color-gold;
+        color: $color-light-grey;
+        border-color: $color-gold;
+        border-radius: 5px;
+    }
 }
