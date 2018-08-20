@@ -36,8 +36,8 @@
 @include large-device {
     #navigation-menu {
         & ul {
-            width: initial;
-            padding: 0 0 0 50px;
+            width: auto;
+            padding: 0 0 0 20px;
         }
     }
     .nav-logo {
@@ -58,3 +58,5 @@
         }
     }
 }
+
+

@@ -1,4 +1,8 @@
 /* Section Main style - desgined for extra small, small and medium devices */
+main { /* this solves problem of main's height in IE browsers */
+    display: inline-block;
+}
+
 .main-articles {
     width: 80%;
     margin: auto;

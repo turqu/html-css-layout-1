@@ -5,6 +5,7 @@
 /* 768px */
 /* 992px */
 /* 1200px */
+/* For IE 10+ */
 /* Color palette variables */
 /* Border variable */
 /* Other variables */
@@ -244,8 +245,8 @@ header {
 
 @media only screen and (min-width: 62em) {
   #navigation-menu ul {
-    width: initial;
-    padding: 0 0 0 50px; }
+    width: auto;
+    padding: 0 0 0 20px; }
   .nav-logo {
     float: left;
     margin: 0 2%;
@@ -259,6 +260,10 @@ header {
       padding-left: 3%; } }
 
 /* Section Main style - desgined for extra small, small and medium devices */
+main {
+  /* this solves problem of main's height in IE browsers */
+  display: inline-block; }
+
 .main-articles {
   width: 80%;
   margin: auto;
